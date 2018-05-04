@@ -13,7 +13,7 @@ dependencies {
         // Pull all dependencies to allow run directly from IDE or command line
         transitive = true
     }
-    compile("org.apache.hadoop:hadoop-aws:$hdefaultHadoopClientVersion")
+    compile("org.apache.hadoop:hadoop-aws:$defaultHadoopClientVersion")
     testCompile "junit:junit:${junitVersion}"
     testCompile project(path: ":h2o-core", configuration: "testArchives")
 }
